@@ -2,7 +2,9 @@
 import React from "react";
 import css from "./home.module.css";
 import Image from "next/image";
-import rightdiv from "../../public/rightlogo.png";
+
+import rightdiv from "../../public/otp.png";
+
 import Button from "@/components/Button/Button";
 
 const Home = () => {
