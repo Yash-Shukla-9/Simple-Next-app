@@ -1,0 +1,9 @@
+.Container {
+  display: flex;
+  max-width: 1366px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 60px;
+  justify-content: space-between;
+  flex-direction: column;
+}

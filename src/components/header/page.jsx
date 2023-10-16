@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logoimg from "../../../public/logo.png";
+import Logoimg from "public/logo.png";
 import css from "./styles.module.css";
+import Button from "../Button/Button";
 
 const list = [
   {
@@ -46,8 +47,14 @@ const Header = () => {
 
       <div className={css.links}>
         {list.map((item) => {
-          return <Link href={item.url}>{item.title}</Link>;
+          return (
+            <Link key={item.id} href={item.url} className={css.text}>
+              {item.title}
+            </Link>
+          );
         })}
+
+        <Button text="Logout" url="/" />
       </div>
     </div>
   );

@@ -1,11 +1,18 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 10px 50px;
+  padding: 10px 0;
+  height: 100px;
   justify-content: space-between;
 }
 
 .links {
   display: flex;
   gap: 20px;
+  align-items: center;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 18px;
 }
