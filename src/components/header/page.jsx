@@ -1,14 +1,16 @@
 import Link from "next/link";
+
 import Image from "next/image";
 import Logoimg from "public/logo.png";
 import css from "./styles.module.css";
 import Button from "../Button/Button";
+import Darkmode from "../Darkmode/Darkmode";
 
 const list = [
   {
     id: 1,
     title: "Home",
-    url: "/home",
+    url: "/",
   },
 
   {
@@ -46,6 +48,7 @@ const Header = () => {
       </div>
 
       <div className={css.links}>
+        <Darkmode />
         {list.map((item) => {
           return (
             <Link key={item.id} href={item.url} className={css.text}>

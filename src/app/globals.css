@@ -8,3 +8,17 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.theme {
+  transition: 1s all ease;
+}
