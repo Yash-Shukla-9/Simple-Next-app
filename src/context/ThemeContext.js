@@ -4,7 +4,6 @@ import { createContext, useState } from "react";
 import { ThemeConsumer } from "styled-components";
 
 export const ThemeContext = createContext();
-
 export const ThemeProvider = ({ children }) => {
   const [mode, setmode] = useState("dark");
 
